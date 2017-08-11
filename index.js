@@ -22,7 +22,11 @@ async function createServer() {
     try {
       await next();
     } catch (error) {
-      console.log(error.message)
+      console.log('error:');
+      console.log(error.valueOf());
+      console.log('ctx.request:');
+      console.log(JSON.stringify(ctx.request, null, 2));
+
       rollbar.error(
         error,
         {
