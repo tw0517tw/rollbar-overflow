@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+  - "stable"
+  - "7"
+  - "6"
+cache: yarn
+install:
+  - yarn
+script:
+  - npm run pass
+  - npm run fail

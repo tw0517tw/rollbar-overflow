@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "fail": "node index.js",
+    "pass": "node --stack-size=1024 index.js"
+  },
+  "dependencies": {
+    "koa": "^2.3.0",
+    "koa-router": "^7.2.1",
+    "rollbar": "^2.1.1",
+    "supertest": "^3.0.0"
+  }
+}
