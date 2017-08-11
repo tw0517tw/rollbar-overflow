@@ -29,7 +29,7 @@ async function createServer() {
           custom: {
             request: ctx.request,
           },
-        },
+        }
       );
       ctx.body = { error: error.message };
     }

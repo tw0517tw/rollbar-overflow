@@ -1,7 +1,6 @@
 {
   "scripts": {
-    "fail": "node index.js",
-    "pass": "node --stack-size=1024 index.js"
+    "test": "node index.js"
   },
   "dependencies": {
     "koa": "^2.3.0",
